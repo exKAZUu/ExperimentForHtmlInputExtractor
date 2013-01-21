@@ -1,0 +1,83 @@
+<html>
+	<body bgcolor="#afeeee">
+	<font face="monospace">
+
+	<!-- 名前=検証用サンプルページ,全角,文字寄せ=左寄せ -->
+	<span style="font-weight: bold"> <font size="4">検証用サンプルページ（資料検索Web）</font></span>
+	<BR>
+
+	<form>
+		<div>
+		<!-- 名前=タイトル,全角,文字寄せ=左寄せ -->
+		<span>タイトル</span>
+		<!-- 名前=タイトル入力テキスト,Tab順=1,数字,英字,記号,カナ,全角,必須項目,最小文字数=0, 最大文字数=80,文字寄せ=左寄せ,DB入力,DB名前=タイトル,備考=タイトル入力は必須です -->
+		<input type="text" name="タイトル入力テキスト" value="">
+		</div>
+		
+		<div>
+		<!-- 名前=著者名,全角,文字寄せ=左寄せ -->
+		<span>著者名　</span>
+		<!-- 名前=著者名入力テキスト,Tab順=2,英字,カナ,全角,最小文字数=0, 最大文字数=30,文字寄せ=左寄せ,DB入力,DB名前=著者名 -->
+		<input type="text" name="著者名入力テキスト" value="">
+		</div>
+	
+		<div>
+		<!-- 名前=出版時期,全角,文字寄せ=左寄せ -->
+		<span>出版時期　　　</span>
+		<!-- 名前=出版時期from,Tab順=5,数字,最小値=2009, 最大値=2013, 文字寄せ=左寄せ,DB入力,DB名前=出版時期from -->
+		<select name="FROM">
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013" selected>2013</option>
+		</select>
+		から
+		<!-- 名前=出版時期to,Tab順=6,数字,最小値=2009, 最大値=2013, 文字寄せ=左寄せ,DB入力,DB名前=出版時期to -->
+		<select name="TO">
+		<option value="2009">2009</option>
+		<option value="2010">2010</option>
+		<option value="2011">2011</option>
+		<option value="2012">2012</option>
+		<option value="2013" selected>2013</option>
+		</select>
+		までの間
+		</div>
+
+		<div>
+		<!-- 名前=最大表示件数,全角,文字寄せ=左寄せ -->
+		<span>最大表示件数　</span>
+		<!-- 名前=最大表示件数セレクト,Tab順=7,数字,最小文字数=2, 最大文字数=3,最小値=50, 最大値=300, 文字寄せ=左寄せ,DB入力,DB名前=最大表示件数 -->
+		<select name="MAXVIEW">
+		<option value="10">10</option>
+		<option value="50" selected>50</option>
+		<option value="100">100</option>
+		<option value="200">200</option>
+		<option value="300">300</option>
+		</select>
+		件
+		</div>
+
+		<div>
+			<!-- 項目名=検索対象,全角,文字寄せ=左寄せ -->
+			<span>検索対象</span>
+			<!-- 項目名=図書ボタン,Tab順=5,全角,文字寄せ=中央寄せ,DB入力,DB出力,DB項目名=図書ボタン -->
+			<input type="checkbox" name="図書" id="BOOK" >図書</label>
+			<!-- 項目名=雑誌ボタン,Tab順=5,全角,文字寄せ=中央寄せ,DB入力,DB出力,DB項目名=図書ボタン -->
+			<input type="checkbox" name="雑誌" id="MAGAZINE">雑誌</label>
+			<!-- 項目名=AVボタン,Tab順=5,全角,文字寄せ=中央寄せ,DB入力,DB出力,DB項目名=図書ボタン -->
+			<input type="checkbox" name="ＡＶ" id="AV">ＡＶ</label>
+		</div>
+
+		<BR>
+		
+		<div class="BUTTON">
+			<!-- 名前=検索開始,Tab順=8,全角,最小文字数=4, 最大文字数=4,文字寄せ=中央寄せ,DB入力,DB名前=検索開始 -->
+			<input type="submit" value="検索開始">
+			<!-- 名前=取消,Tab順=9,全角,最小文字数=2, 最大文字数=2,文字寄せ=中央寄せ,DB入力,DB名前=取消 -->
+			<input type="reset" value="取消">
+		</div>
+	</form>
+	</font>
+	</body>
+</html>
